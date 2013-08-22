@@ -1,0 +1,150 @@
+/*responsive design: Viewport,layeuts liquidos,media query*/
+/* estilos principales de mobile*/
+/*fuentes*/
+
+@font-face {
+	font-family: 'iconic';
+	src:url('fonts/iconic.eot');
+	src:url('fonts/iconic.eot?#iefix') format('embedded-opentype'),
+		url('fonts/iconic.woff') format('woff'),
+		url('fonts/iconic.ttf') format('truetype'),
+		url('fonts/iconic.svg#iconic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-star, .icon-arrow-up-alt1, .icon-arrow-down-alt1 {
+	font-family: 'iconic';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width:3px;
+	-webkit-text-stroke-color:#fff;
+}
+.icon.star{
+	cursor:pointer;
+}
+.icon-star:after {
+	content: "\e002";
+	color:yellow;
+	float:right;
+	font-family:'icomoon';
+	font-size: 1.5em;
+	margin-bottom: 0.2em;
+	text-align: right;
+	width: 10%;
+}
+.icon-arrow-up-alt1:after {
+	content: "\e000";
+	color:green;
+	float:right;
+	font-family:'icomoon';
+	font-size: 1.5em;
+	text-align: right;
+	width: 10%;
+}
+.icon-arrow-down-alt1:after {
+	content: "\e001";
+	color:red;
+	float:right;
+	font-family:'icomoon';
+	font-size: 1.5em;
+	text-align: right;
+	width: 10%;
+}
+
+/*generales*/
+
+body{
+	font-family: 'roboto', sans-serif;
+}
+h1,h2{
+margin: 0 2em 0;
+}
+
+header h1{
+	color:blue;
+	display:inline-block;
+	font-family: 'Sonsie One', tahoma;
+	font-size: 3em;
+	max-width: 70%;
+}
+header figure {
+	width:20%;
+	display:inline-block;
+	float:right;
+}
+	figure img{
+		height:auto;
+		width:100%;
+	}
+nav {
+	background-color: lightblue;
+	clear: both;
+	padding: 0.1em 0;
+	width:100%;
+}
+	nav ul{
+		list-style: none;
+	}
+		nav ul li{
+			display: inline-block;
+		}
+			nav ul li a{
+				color:darkblue;
+				text-decoration: none;
+			}
+			nav ul li a:hover{
+				color: orange;
+			}
+section{
+	width: 100%;
+}
+	section article{
+		background-color: #fff;
+		border: 2px solid blue;
+		position: relative;
+		margin: 0.3em 0 4em 0;
+	}
+		section article figure{
+			display:inline-block;
+			margin-right:0.1em;
+			vertical-align: top;
+			width:20%;
+		}
+		section article .contenidoArticle{
+			display: inline-block;
+			width: 75%;
+		}
+		section article h2{
+			display:inline-block;
+			font-family: 'Sonsie One', cursive;
+			font-size:2em;
+			font-weight: bold;
+		}
+			section article h2 a{
+				text-decoration: none;
+			}
+		section article .votacion{
+			border:1px solid blue;
+			border-radius: 0 0 15px 15px;
+			position: absolute;
+			text-align: center;
+			top: 100%;
+			width:20%;
+		}
+			section article .votacion p{
+				display: inline-block;
+			}
+
+footer{
+	background-color: purple;
+	color:white;
+	font-weight: bold;
+	padding: 2px;
+	text-align:center;
+}
